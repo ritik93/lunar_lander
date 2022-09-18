@@ -1,6 +1,6 @@
 ## The Lunar Lander Environment
 
-In this project we will be using [OpenAI's Gym Library](https://www.gymlibrary.ml/).  
+In this project we will be using [OpenAI's Gym Library](https://www.gymlibrary.dev/).  
 The Gym library provides a wide variety of environments for reinforcement learning.  
 To put it simply, an environment represents a problem or task to be solved. In this project, we will try to solve the Lunar Lander environment using reinforcement learning.  
 
@@ -61,5 +61,5 @@ An episode ends (i.e the environment enters a terminal state) if:
   
   
   
-For a complete description of the environment, check out the [Open AI Gym documentation](https://www.gymlibrary.ml/environments/box2d/lunar_lander/)
+For a complete description of the environment, check out the [Open AI Gym documentation](https://www.gymlibrary.dev/environments/box2d/lunar_lander/)
 
