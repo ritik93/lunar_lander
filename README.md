@@ -73,7 +73,7 @@ $$
 Q_{i+1}(s,a) = R + \gamma \max_{a'}Q_i(s',a')
 $$
 
-This iterative method converges to the optimal action-value function $Q^*(s,a)$
+This iterative method converges to the optimal action-value function $Q^*(s,a)$ as 𝑖→∞
 
 In the Deep $Q$-Learning, we solve this problem by using a neural network to estimate the action-value function $Q(s,a)\approx Q^*(s,a)$. We call this neural network a $Q$-Network and it can be trained by adjusting its weights at each iteration to minimize the mean-squared error in the Bellman equation.
 
