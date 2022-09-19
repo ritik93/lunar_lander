@@ -122,4 +122,12 @@ where $\tau\ll 1$. By using the soft update, we are ensuring that the target val
 
 When an agent interacts with the environment, the states, actions, and rewards the agent experiences are sequential by nature. If the agent tries to learn from these consecutive experiences it can run into problems due to the strong correlations between them. To avoid this, we employ a technique known as **Experience Replay** to generate uncorrelated experiences for training our agent. Experience replay consists of storing the agent's experiences (i.e the states, actions, and rewards the agent receives) in a memory buffer and then sampling a random mini-batch of experiences from the buffer to do the learning. The experience tuples $(S_t, A_t, R_t, S_{t+1})$ will be added to the memory buffer at each time step as the agent interacts with the environment.
 
-For convenience, we will store the experiences as named tuples.
+For convenience, we will store the experiences as named tuples.  
+  
+  
+## Deep Q-Learning Algorithm with Experience Replay  
+  
+The final algorithm is as follows <img width="1271" alt="deep_q_algorithm" src="https://user-images.githubusercontent.com/43729157/190983995-f6bb919f-8bd9-4d66-8ad6-0aa5d424b44e.png">
+:  
+  
+
