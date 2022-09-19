@@ -127,7 +127,5 @@ For convenience, we will store the experiences as named tuples.
   
 ## Deep Q-Learning Algorithm with Experience Replay  
   
-The final algorithm is as follows <img width="1271" alt="deep_q_algorithm" src="https://user-images.githubusercontent.com/43729157/190983995-f6bb919f-8bd9-4d66-8ad6-0aa5d424b44e.png">
-:  
-  
-
+The final algorithm is as follows :  
+<img width="1271" alt="deep_q_algorithm" src="https://user-images.githubusercontent.com/43729157/190983995-f6bb919f-8bd9-4d66-8ad6-0aa5d424b44e.png">
