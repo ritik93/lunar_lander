@@ -7,8 +7,9 @@ To put it simply, an environment represents a problem or task to be solved. In t
 The goal of the Lunar Lander environment is to land the lunar lander safely on the landing pad on the surface of the moon.   
 The landing pad is designated by two flag poles and it is always at coordinates `(0,0)` but the lander is also allowed to land outside of the landing pad. The lander starts at the top center of the environment with a random initial force applied to its center of mass and has infinite fuel.  
   
-The environment is considered solved if you get `200` points.  
-  
+The environment is considered solved if we get `200` points.  
+  ![lunar_lander](https://user-images.githubusercontent.com/43729157/190984297-e4f481bb-ffa4-499d-ab47-1036490aa8c5.gif)
+
 ### Action Space
 
 The agent has four discrete actions available:
