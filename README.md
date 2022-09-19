@@ -114,3 +114,5 @@ Every $C$ time steps we will use the $\hat Q$-Network to generate the $y$ target
 $$
 w^-\leftarrow \tau w + (1 - \tau) w^-
 $$
+
+where $\tau\ll 1$. By using the soft update, we are ensuring that the target values, $y$, change slowly, which greatly improves the stability of our learning algorithm.
