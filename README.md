@@ -89,4 +89,10 @@ We can train the $Q$-Network by adjusting it's weights at each iteration to mini
 
 $$
 y = R + \gamma \max_{a'}Q(s',a';w)
+$$  
+  
+where $w$ are the weights of the $Q$-Network. This means that we are adjusting the weights $w$ at each iteration to minimize the following error:
+
+$$
+\overbrace{\underbrace{R + \gamma \max_{a'}Q(s',a'; w)}_{\rm {y~target}} - Q(s,a;w)}^{\rm {Error}}
 $$
