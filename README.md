@@ -107,3 +107,10 @@ $$
 $$
 
 where $w^-$ and $w$ are the weights the target $\hat Q$-Network and $Q$-Network, respectively.
+  
+In practice, we will use the following algorithm:  
+Every $C$ time steps we will use the $\hat Q$-Network to generate the $y$ targets and update the weights of the target $\hat Q$-Network using the weights of the $Q$-Network. We will update the weights $w^-$ of the the target $\hat Q$-Network using a **soft update**. This means that we will update the weights $w^-$ using the following rule:
+ 
+$$
+w^-\leftarrow \tau w + (1 - \tau) w^-
+$$
