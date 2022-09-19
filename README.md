@@ -96,3 +96,6 @@ where $w$ are the weights of the $Q$-Network. This means that we are adjusting t
 $$
 \overbrace{\underbrace{R + \gamma \max_{a'}Q(s',a'; w)}_{\rm {y~target}} - Q(s,a;w)}^{\rm {Error}}
 $$
+  
+Notice that this forms a problem because the $y$ target is changing on every iteration. Having a constantly moving target can lead to oscillations and instabilities.  
+To avoid this, we can create a separate neural network for generating the $y$ targets. We call this separate neural network the **target $\hat Q$-Network** and it will have the same architecture as the original $Q$-Network.
